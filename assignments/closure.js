@@ -4,6 +4,21 @@
 // that manipulates variables defined in the outer scope.
 // The outer scope can be a parent function, or the top level of the script.
 
+function car(carName){
+  console.log(`${carName} is one of the most popular car brands in the world.`);
+  debugger;
+  function make(makeName){
+    debugger;
+    function year(yearDate){
+      console.log(`${yearDate} is the year the ${carName} ${makeName} was manufactured.`);
+      debugger;
+    }
+    year('2019');
+  }
+  make('Prius');
+}
+car('Toyota');
+
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 

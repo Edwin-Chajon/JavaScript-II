@@ -45,11 +45,12 @@ function getLength(arr, cb) {
 const length=(a)=>a.length;
 console.log (getLength(items,length))
 
+
 function last(arr, cb) {
   return arr[cb]
 }
-const lastItem= (a)=>items.length-1;
-console.log(last(items,lastItem()))
+const lastItem= (a)=>a.length-1;
+console.log(last(items,lastItem(items)))
 
 
 function sumNums(x, y, cb) {
@@ -79,6 +80,7 @@ function check(item, list){
   } else{return false;}
 }
 console.log(contains("Pencil",items,check));
+
 /* STRETCH PROBLEM */
 
 function removeDuplicates(array, cb) {
